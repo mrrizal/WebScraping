@@ -20,18 +20,6 @@ def getBreakingNews(url):
 
 	return values
 
-	'''
-	values = {}
-	return va
-	for data in datas:
-		try:
-			values[data.text] = data.find_all('a')[0].get('href')
-		except:
-			pass
-
-	return values
-	'''
-
 def getContent(url):
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content, "html5lib")
